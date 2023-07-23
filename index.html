@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Actividad Final</title>
+</head>
+<body>
+    <div class='main-layout'>
+        <div class="box layout-element">
+            <h2>Datos</h2>
+
+            <div class="container">
+                <div class="content">
+                    <div><h4 class='form-title'>SIMULACIÓN DE TRÁFICO VEHICULAR</h4></div>
+            
+                    <form action="#" id='form'>
+                        <div class="input-box">
+                            <h3>Día de inicio</h3>
+                            <input type="date" id="fechaInicio"> 
+                            <h3>Hora de inicio</h3>
+                            <input type="number" min="0" max="23" id="inicioHora" placeholder="Hora (Ej: 7)">
+                            <input type="number" min="0" max="59" id="inicioMins" placeholder="Minutos (Ej: 00)">
+                        </div>
+
+                        <div class="input-box">
+                            <h3>Día de finalización</h3>
+                            <input type="date" id="fechaFin">
+                            <h3>Hora de finalización</h3>
+                            <input type="number" min="0" max="23" id="finHora" placeholder="Hora (Ej: 23)">
+                            <input type="number" min="0" max="59" id="finMins" placeholder="Minutos (Ej: 59)">
+                        </div>
+    
+                        <div>
+                            <h4>(La hora debe ingresarse en formato 24hr)</h4>
+                        </div>
+        
+                        <button type='submit'>Iniciar Simulación</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="containerresultados layout-element">
+            <div>
+                <h2>Ejecución de Simulación</h2>
+            </div>
+
+            <div class='container-vias' id='container-vias'>
+                <!-- <div class="vias">
+                    <p>Hora</p>
+
+                    <div class='separator'>
+                        <div class="rvias">
+                            <h3>Km</h3>
+                            <h4>-</h4>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                            </ul>
+                        </div>
+        
+                        <div class="rvias">
+                            <h3>Via Norte-Sur</h3>
+                            <h4 id="picoNS">-</h4>
+                            <ul id="via1"></ul>
+                        </div>
+            
+                        <div class="rvias">
+                            <h3>Via Sur-Norte</h3>
+                            <h4 id="picoSN">-</h4>
+                            <ul id="via2"></ul>
+                        </div>
+        
+                        <div>
+                            <h3>Vía auxiliar</h3>
+                            <h4 id="direccionAuxiliar"></h4>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    
+        <div class="reportes-container layout-element">
+            <h2>Reportes finales de la simulación</h2>
+
+            <div class='reportes' id="reportesFinales">
+                <div class='report-div'>
+                    <h3>Reporte de Via Auxiliar Aerea</h3>
+                    <div id="reporteAuxiliar" class='bottles'></div>
+                </div>
+    
+                <div class='report-div'>
+                    <h3>Reporte de Embotellamientos</h3>
+                    <div id="reporteEmbotellamiento" class='bottles'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+
+    <script src="./assets/generadorSimulacion.js"></script>
+</body>
+</html>

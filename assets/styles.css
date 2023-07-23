@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 500;
+    position: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.865);
+    padding: 15px 10px;
+}
+
+h4 {
+    margin: auto;
+    text-align: center;
+    color: rgb(52, 86, 51);
+}
+
+h5 {
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(52, 86, 51);
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #8cc681;
+
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+
+    width: calc(29% - (50px / 3));
+}
+
+.content form .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.content form .input-box h3 {
+    padding: 10px 0 10px;
+    color: rgb(52, 86, 51);
+    text-align: center;
+}
+
+
+form .input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;   
+}
+
+form button {
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+    height: 80%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgb(52, 86, 51);
+}
+
+/*RESULTADOS*/
+
+.containerresultados {
+    text-align: center;
+    color: #fff;
+
+    width: calc(33% - (50px / 3));
+
+    height: 100%;
+    max-height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.vias {
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    color: rgb(52, 86, 51);
+    background-color: #ebecee;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    /* overflow: hidden; */
+}
+
+.separator {
+    display: none;
+    justify-content: space-between;
+    padding: 0 15px 15px;
+    gap: 25px;
+}
+
+.vias.show .separator {
+    display: flex;
+}
+
+.vias > p {
+    font-size: 1.17em;
+    font-weight: bold;
+
+    padding: 15px;
+
+    cursor: pointer;
+}
+
+.vias.show > p {
+    padding: 15px 15px 0;
+}
+
+h2 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.reportes {
+    text-align: center;
+    text-align: center;
+    color: rgb(52, 86, 51);
+
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    overflow-y: auto;
+}
+
+.reportes::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.reportes {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.report-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+    background-color: #ebecee;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.main-layout {
+    display: flex;
+    align-items: start;
+    gap: 25px;
+
+    height: 100%;
+}
+
+.layout-element {
+    flex-shrink: 0;
+}
+
+.form-title {
+    margin-bottom: 25px;
+}
+
+.container-vias {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+    margin-top: 25px;
+
+    overflow-y: auto;
+}
+
+.container-vias::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-vias {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.bottles { 
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.bottles > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.bottles > div > p:first-child {
+    font-weight: 700;
+}
+
+.reportes-container {
+    width: calc(38% - (50px / 3));
+
+    height: 100%;
+    max-height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
